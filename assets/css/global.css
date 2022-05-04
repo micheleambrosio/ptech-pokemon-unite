@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #FDCF00;
+  --secondary-color: #ffa800;
+  --dark-color: #111;
+  --charizard-color: #FFA800;
+  --container-size: 1024px;
+  --card-size: calc(var(--container-size) / 4 - 32px);
+  --card-title-background: #232323;
+  --footer-background: #232323
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark-color);
+  color: white;
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.button__link {
+  padding: 16px 24px;
+  background-color: var(--primary-color);
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--dark-color);
+  transition: .3s ease-in-out;
+}
+
+.button__link:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+}
