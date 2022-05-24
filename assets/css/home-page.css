@@ -37,9 +37,9 @@
 }
 
 .card__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, var(--card-size));
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 40px 14px;
 }
 
