@@ -1,0 +1,70 @@
+@import url('global.css');
+@import url('reset.css');
+
+.search__container {
+  margin: 40px 0;
+  display: flex;
+}
+
+.search__field {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 4px;
+  color: white;
+  padding: 16px;
+  margin-right: 40px;
+  width: 100%;
+}
+
+.search__button {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  padding: 16px 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 1s ease-in-out;
+}
+
+.search__button:hover {
+  background-color: violet;
+  color: white
+}
+
+.card__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  width: calc(var(--container-size) / 4 - 32px);
+  height: calc(var(--container-size) / 4 + 70px);
+  border-radius: 9px;
+  position: relative;
+}
+
+.card__image {
+  width: 100%;
+  object-fit: contain;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.card.orange {
+  background-color: var(--orange);
+}
+
+.card__title {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 24px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  background-color: var(--card-title-background);
+}
