@@ -1,16 +1,13 @@
 listPokemons();
 
 function listPokemons(){
-  const request = new XMLHttpRequest();
-  request.open('GET', 'https://6283929f92a6a5e462260498.mockapi.io/pokemon');
-  
-  request.onload = function() {
-    const data = JSON.parse(request.response);
+  fetch('https://6283929f92a6a5e462260498.mockapi.io/pokemon')
+  .then(response => response.json())
+  .then(data => {
     const pokemons = data.map((item) => getContentCard(item));
 
-    document.getElementById('card__container').innerHTML = pokemons.join('');
-  };
-  request.send();
+		document.querySelector(".card__container").innerHTML = pokemons.join('');
+  });
 }
 
 function getContentCard(data){
@@ -20,5 +17,4 @@ function getContentCard(data){
       <div class="card__title"> ${data.name}</div>
     </a>
     `;
-
 }
