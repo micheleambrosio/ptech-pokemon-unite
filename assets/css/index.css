@@ -23,17 +23,17 @@
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 1s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .search__button:hover {
-  background-color: violet;
-  color: white
+  background-color: #8347e1;
+  color: white;
 }
 
 .card__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 }
