@@ -51,8 +51,8 @@
 }
 
 .card {
-  width: var(--card-size);
-  height: calc(var(--card-size) + 70px);
+  width: calc(var(--container-size) / 4 - 32px);
+  height: calc(calc(var(--container-size) / 4 - 32px) + 70px);
   border-radius: 9px;
   position: relative;
 }
