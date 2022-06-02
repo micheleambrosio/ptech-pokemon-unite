@@ -133,9 +133,17 @@ h2 {
   display: none;
 }
 
+.icon {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .menu{
     display: none;
+  }
+
+  .icon{
+    display: block;
   }
 
   .menu__logo{

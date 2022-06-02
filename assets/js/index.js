@@ -11,7 +11,7 @@ function loadPokemon(){
 
 function pokemon(item){
     return `
-    <a class="card" style="background:${item.color}" href="/${item.id}">
+    <a class="card" style="background:${item.color}" href="/${item.id}.html">
         <img class="card__image" src="/assets/images/stat/stat-${item.avatar}.png">
         <div class="card__title">${item.name}</div>
     </a>
